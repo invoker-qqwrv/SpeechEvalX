@@ -379,16 +379,6 @@ What is in this repository today versus what the paper reports:
 
 ---
 
-## Limitations
-
-- Matched edits control lexical severity, **not** semantic distance or acoustic likelihood.
-- Observed ASR hypotheses contain correlated multi-edit errors. Single-edit results should not be generalized to them without separate validation.
-- Evidence comes from English data, synthetic speech, current tool schemas, and only 54 no-call cases. Broader validation needs more languages, APIs and agent families.
-- The analysis uses reference transcripts and reference actions, so it is an **offline** diagnostic for ASR / model selection, error analysis and regression-test prioritization, not a deployment-time error detector.
-- Multi-call cases are out of scope for the primary analysis.
-
----
-
 ## Citation
 
 If you use SpeechEvalX, please cite the paper (update with venue / arXiv details when available):
