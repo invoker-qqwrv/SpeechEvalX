@@ -1,0 +1,216 @@
+{
+  "validation": {
+    "sources": 4,
+    "controlled_eligible_sources": 3,
+    "roles": [
+      "number",
+      "entity",
+      "function_word"
+    ],
+    "observed_conditions": [
+      "whisper"
+    ],
+    "agents": [
+      "replay"
+    ]
+  },
+  "config_sha256": "1e6e04d65be561fe5a3206643cd1a57731f80a3262e8d1eda89839303ba08f7e",
+  "data_sha256": "a63f1d29fe79dbfaef8d8f2fdf4128c5c39c2ba80b25023c58d504415789dd18",
+  "actions": [
+    {
+      "agent": "replay",
+      "condition": "asr:whisper",
+      "eligible": 4,
+      "scored": 4,
+      "instrumentation_failures": 0,
+      "coverage": 1.0,
+      "call_references": 3,
+      "no_call_references": 1,
+      "correct_calls": 0,
+      "correct_no_calls": 0,
+      "recoverable_correct_tools": 3,
+      "jca": 0.0,
+      "tool_accuracy": 1.0,
+      "conditional_arg_em": 0.0,
+      "no_call_accuracy": 0.0,
+      "corpus_wer": 0.15789473684210525,
+      "word_edits": 3,
+      "reference_words": 19
+    },
+    {
+      "agent": "replay",
+      "condition": "entity",
+      "eligible": 3,
+      "scored": 3,
+      "instrumentation_failures": 0,
+      "coverage": 1.0,
+      "call_references": 3,
+      "no_call_references": 0,
+      "correct_calls": 0,
+      "correct_no_calls": 0,
+      "recoverable_correct_tools": 3,
+      "jca": 0.0,
+      "tool_accuracy": 1.0,
+      "conditional_arg_em": 0.0,
+      "no_call_accuracy": null,
+      "corpus_wer": 0.2,
+      "word_edits": 3,
+      "reference_words": 15
+    },
+    {
+      "agent": "replay",
+      "condition": "function_word",
+      "eligible": 3,
+      "scored": 3,
+      "instrumentation_failures": 0,
+      "coverage": 1.0,
+      "call_references": 3,
+      "no_call_references": 0,
+      "correct_calls": 3,
+      "correct_no_calls": 0,
+      "recoverable_correct_tools": 3,
+      "jca": 1.0,
+      "tool_accuracy": 1.0,
+      "conditional_arg_em": 1.0,
+      "no_call_accuracy": null,
+      "corpus_wer": 0.2,
+      "word_edits": 3,
+      "reference_words": 15
+    },
+    {
+      "agent": "replay",
+      "condition": "number",
+      "eligible": 3,
+      "scored": 3,
+      "instrumentation_failures": 0,
+      "coverage": 1.0,
+      "call_references": 3,
+      "no_call_references": 0,
+      "correct_calls": 0,
+      "correct_no_calls": 0,
+      "recoverable_correct_tools": 3,
+      "jca": 0.0,
+      "tool_accuracy": 1.0,
+      "conditional_arg_em": 0.0,
+      "no_call_accuracy": null,
+      "corpus_wer": 0.2,
+      "word_edits": 3,
+      "reference_words": 15
+    },
+    {
+      "agent": "replay",
+      "condition": "reference",
+      "eligible": 4,
+      "scored": 4,
+      "instrumentation_failures": 0,
+      "coverage": 1.0,
+      "call_references": 3,
+      "no_call_references": 1,
+      "correct_calls": 3,
+      "correct_no_calls": 1,
+      "recoverable_correct_tools": 3,
+      "jca": 1.0,
+      "tool_accuracy": 1.0,
+      "conditional_arg_em": 1.0,
+      "no_call_accuracy": 1.0,
+      "corpus_wer": 0.0,
+      "word_edits": 0,
+      "reference_words": 19
+    }
+  ],
+  "paired": {
+    "replay": {
+      "common_sources": 3,
+      "sources_with_some_scored_variants": 3,
+      "roles": [
+        {
+          "error_class": "entity",
+          "n": 3,
+          "harmed": 3,
+          "rescued": 0,
+          "cei": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "iterations": 1000,
+          "loss_pp": 100.0
+        },
+        {
+          "error_class": "function_word",
+          "n": 3,
+          "harmed": 0,
+          "rescued": 0,
+          "cei": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "iterations": 1000,
+          "loss_pp": 0.0
+        },
+        {
+          "error_class": "number",
+          "n": 3,
+          "harmed": 3,
+          "rescued": 0,
+          "cei": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "iterations": 1000,
+          "loss_pp": 100.0
+        }
+      ],
+      "role_contrasts": [
+        {
+          "contrast": "number_vs_entity",
+          "sources": 3,
+          "harmed_discordant": 0,
+          "rescued_discordant": 0,
+          "p_value": 1.0,
+          "holm_p": 1.0
+        },
+        {
+          "contrast": "number_vs_function_word",
+          "sources": 3,
+          "harmed_discordant": 0,
+          "rescued_discordant": 3,
+          "p_value": 0.25,
+          "holm_p": 0.75
+        },
+        {
+          "contrast": "entity_vs_function_word",
+          "sources": 3,
+          "harmed_discordant": 0,
+          "rescued_discordant": 3,
+          "p_value": 0.25,
+          "holm_p": 0.75
+        }
+      ],
+      "harmed_pairs": 6,
+      "failure_categories": [
+        {
+          "category": "argument_value",
+          "count": 6,
+          "share": 1.0
+        }
+      ]
+    }
+  },
+  "observed_asr": [
+    {
+      "agent": "replay",
+      "condition": "asr:whisper",
+      "pairs": 4,
+      "distinct_harmed_pairs": 4,
+      "distinct_failed_hypotheses": 4,
+      "error_hypotheses_without_role_labels": 0,
+      "role_occurrences": [
+        {
+          "role": "number",
+          "with_role_error": 3,
+          "action_failures": 3,
+          "harmed": 3
+        }
+      ]
+    }
+  ],
+  "instrumentation_failures": 0,
+  "diagnostics": null
+}

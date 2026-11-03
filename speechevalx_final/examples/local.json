@@ -1,0 +1,38 @@
+{
+  "data": "your_data.jsonl",
+  "output": "../runs/qwen",
+  "seed": 2027,
+  "roles": [
+    "number",
+    "entity",
+    "negation",
+    "intent_cue",
+    "other_slot",
+    "function_word",
+    "other_noncritical"
+  ],
+  "agents": {
+    "qwen": {
+      "type": "hf",
+      "model_name": "Qwen/Qwen2.5-7B-Instruct",
+      "dtype": "bfloat16",
+      "device_map": "auto",
+      "max_new_tokens": 256
+    }
+  },
+  "asr": {
+    "whisper": {
+      "type": "whisper",
+      "model_name": "openai/whisper-large-v3",
+      "device": "cuda:0",
+      "language": "english"
+    }
+  },
+  "bootstrap_iterations": 2000,
+  "diagnostics": {
+    "enabled": true,
+    "primary_agent": "qwen",
+    "folds": 5,
+    "compute_bert": true
+  }
+}

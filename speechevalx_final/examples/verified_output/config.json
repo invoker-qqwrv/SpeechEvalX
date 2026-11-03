@@ -1,0 +1,19 @@
+{
+  "data": "demo.jsonl",
+  "output": "../runs/demo",
+  "seed": 2027,
+  "roles": [
+    "number",
+    "entity",
+    "function_word"
+  ],
+  "agents": {
+    "replay": {
+      "type": "replay"
+    }
+  },
+  "bootstrap_iterations": 1000,
+  "diagnostics": {
+    "enabled": false
+  }
+}

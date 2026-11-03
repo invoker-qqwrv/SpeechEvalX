@@ -1,0 +1,6 @@
+﻿agent,condition,eligible,scored,instrumentation_failures,coverage,call_references,no_call_references,correct_calls,correct_no_calls,recoverable_correct_tools,jca,tool_accuracy,conditional_arg_em,no_call_accuracy,corpus_wer,word_edits,reference_words
+replay,asr:whisper,4,4,0,1.0,3,1,0,0,3,0.0,1.0,0.0,0.0,0.15789473684210525,3,19
+replay,entity,3,3,0,1.0,3,0,0,0,3,0.0,1.0,0.0,,0.2,3,15
+replay,function_word,3,3,0,1.0,3,0,3,0,3,1.0,1.0,1.0,,0.2,3,15
+replay,number,3,3,0,1.0,3,0,0,0,3,0.0,1.0,0.0,,0.2,3,15
+replay,reference,4,4,0,1.0,3,1,3,1,3,1.0,1.0,1.0,1.0,0.0,0,19

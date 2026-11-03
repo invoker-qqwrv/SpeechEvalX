@@ -1,0 +1,4 @@
+{"benchmark": "demo", "source_sample_id": "demo-1", "controlled_eligible": true, "missing_roles": []}
+{"benchmark": "demo", "source_sample_id": "demo-2", "controlled_eligible": true, "missing_roles": []}
+{"benchmark": "demo", "source_sample_id": "demo-3", "controlled_eligible": true, "missing_roles": []}
+{"benchmark": "demo", "source_sample_id": "demo-no-call", "controlled_eligible": false, "missing_roles": ["number", "entity", "function_word"]}

@@ -1,0 +1,15 @@
+# Needed only when your tool schemas contain JSON Schema parameters.
+jsonschema>=4.18
+# B0-B4 grouped failure prediction and bootstrap.
+numpy>=1.24
+scikit-learn>=1.1
+# Optional: local agents / Whisper / computed BERT.
+# torch
+# transformers
+# accelerate
+# Optional: audio files (all ASR backends).
+# soundfile
+# scipy
+# Optional: SenseVoice / Paraformer.
+# funasr
+# modelscope

@@ -1,0 +1,4 @@
+{"benchmark": "demo", "source_sample_id": "demo-1", "condition": "whisper", "text": "Transfer 32 dollars to Alice", "roles": ["number"]}
+{"benchmark": "demo", "source_sample_id": "demo-2", "condition": "whisper", "text": "Transfer 33 dollars to Alice", "roles": ["number"]}
+{"benchmark": "demo", "source_sample_id": "demo-3", "condition": "whisper", "text": "Transfer 34 dollars to Alice", "roles": ["number"]}
+{"benchmark": "demo", "source_sample_id": "demo-no-call", "condition": "whisper", "text": "Do not transfer money"}

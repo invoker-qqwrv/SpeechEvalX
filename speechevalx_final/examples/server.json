@@ -1,0 +1,15 @@
+{
+  "data": "your_data.jsonl",
+  "output": "../runs/server",
+  "seed": 2027,
+  "roles": [],
+  "agents": {
+    "qwen": {
+      "type": "compatible",
+      "model_name": "Qwen/Qwen2.5-7B-Instruct",
+      "base_url": "http://localhost:8000/v1",
+      "max_new_tokens": 256
+    }
+  },
+  "bootstrap_iterations": 2000
+}
