@@ -1,6 +1,6 @@
 # SpeechEvalX
 
-**Task-role diagnostics for tool-using voice agents: when does an ASR error actually matter?**
+** When does an ASR error matter?Task-role diagnostics for tool-using voice agents**
 
 SpeechEvalX is a paired diagnostic protocol, with a reference implementation, for measuring how ASR errors propagate through a cascaded voice agent:
 
