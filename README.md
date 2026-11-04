@@ -349,35 +349,6 @@ Practical notes:
 
 ---
 
-## Paper ↔ code status
-
-What is in this repository today versus what the paper reports:
-
-| Paper component | Status |
-|---|---|
-| Paired clean/corrupted execution against one reference action | ✅ `experiment.run_paired_variant` |
-| Matched single-token substitutions (same source, count, operation) | ✅ `corruption.generate_matched_substitutions` |
-| Safe tool-call parsing, no-call handling, malformed = failure | ✅ `parsing`, `experiment._prediction` |
-| Frozen, configurable action scoring (tool / args / JCA) | ✅ `scoring` |
-| Word alignment with S/I/D provenance | ✅ `alignment` |
-| Auditable paired traces | ✅ `trace.PairedTrace` |
-| Paired loss `L_c`, source-cluster bootstrap, exact McNemar, Holm | ✅ `statistics` |
-| VoiceAgentBench and BFCL Audio adapters | ✅ `datasets` (local files; the seed-2027 sampling and eligibility filtering scripts are not included) |
-| Whisper large-v3 front end | ✅ `models.asr.WhisperASR` |
-| SenseVoice-Small and Paraformer-large front ends | ⏳ not yet implemented |
-| Qwen2.5-7B-Instruct agent | 🟡 `QwenAgent` (greedy, ≤256 tokens). It does not set bfloat16 or a seed, and the paper's frozen prompt/config is not included. |
-| Llama-3.1-8B-Instruct sensitivity agent | ⏳ no dedicated adapter yet |
-| Role annotation tooling and annotated span files | ⏳ roles enter only through `Corruption.error_class` |
-| Final-output error categories with the paper's precedence (Table 7) | 🟡 only a coarse `first_failure` (tool / argument / terminal) is recorded |
-| Corpus WER with NFKC + lower-case + punctuation removal | 🟡 `metrics.wer` is per-utterance, lower-cased and whitespace-tokenized |
-| Aggregate JCA / Tool / Arg-EM / No-call tables | ⏳ per-case flags are stored; no aggregation script yet |
-| B0–B4 failure-prediction ablation (BERT cosine, Semantic-WER, grouped CV) | ⏳ not yet included |
-| Second-model transfer and leave-domain-out evaluation | ⏳ not yet included |
-| Repeated-inference audit (50 sources × 3 runs) | ⏳ not yet included |
-
-✅ implemented · 🟡 partial or simplified · ⏳ not in the repository yet
-
----
 
 ## Citation
 
